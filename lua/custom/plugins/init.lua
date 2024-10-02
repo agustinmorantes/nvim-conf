@@ -3,9 +3,6 @@
 --
 -- See the kickstart.nvim README for more information
 
--- vim.o.background = 'dark'
--- vim.cmd [[colorscheme gruvbox]]
-
 return {
   {
     'ellisonleao/gruvbox.nvim',
@@ -20,17 +17,10 @@ return {
     'zbirenbaum/copilot.lua',
     cmd = 'Copilot',
     event = 'InsertEnter',
-    config = function()
-      require('copilot').setup {
-        suggestion = { enabled = false },
-        panel = { enabled = false },
-      }
-    end,
+    opts = {
+      suggestion = { enabled = false },
+      panel = { enabled = false },
+    },
   },
-  {
-    'zbirenbaum/copilot-cmp',
-    config = function()
-      require('copilot_cmp').setup()
-    end,
-  },
+  { 'zbirenbaum/copilot-cmp', opts = {} },
 }
