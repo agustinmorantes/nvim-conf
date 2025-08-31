@@ -13,16 +13,16 @@ return {
       transparent_mode = true,
     },
   },
-  {
-    'zbirenbaum/copilot.lua',
-    cmd = 'Copilot',
-    event = 'InsertEnter',
-    opts = {
-      suggestion = { enabled = false },
-      panel = { enabled = false },
-    },
-  },
-  { 'zbirenbaum/copilot-cmp', opts = {} },
+  -- {
+  --   'zbirenbaum/copilot.lua',
+  --   cmd = 'Copilot',
+  --   event = 'InsertEnter',
+  --   opts = {
+  --     suggestion = { enabled = false },
+  --     panel = { enabled = false },
+  --   },
+  -- },
+  -- { 'zbirenbaum/copilot-cmp', opts = {} },
   {
     'ray-x/lsp_signature.nvim',
     event = 'VeryLazy',
